@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Cutout (SAM 2.1)</title>
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <h1>Image Cutout (SAM 2.1)</h1>
+
+      <section>
+        <h3>Status</h3>
+        <p id="status"></p>
+      </section>
+
+      <section>
+        <h3>Image</h3>
+
+        <input id="file-input" type="file" accept="image/*" />
+        <button id="default-image-button">Use Default Image</button>
+      </section>
+
+      <section>
+        <h3>Points (Left Click)</h3>
+
+        <button id="clear-button" type="button">Clear Points</button>
+      </section>
+
+      <section class="canvas-panels">
+        <div class="canvas-panel">
+          <h2>Source</h2>
+          <div class="canvas-wrap">
+            <canvas id="canvas"></canvas>
+          </div>
+        </div>
+
+        <div class="canvas-panel">
+          <h2>Cutout</h2>
+          <div class="canvas-wrap result-wrap">
+            <canvas id="result-canvas"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
